@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIDEBAR</title>
+</head>
+<body>
+  
+  <div class="d-flex flex-column sidebar" >
+
+    <!-- MENU TEXT -->
+    <a href="/" class="d-block pt-3 link-dark text-decoration-none sidebar-body menu-text mt-4">
+      <p class="text-center mb-1">Menu</p>
+    </a>
+
+
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+
+      <!-- INVENTORY -->
+      <li class="my-2">
+        <a href="#" class="nav-link border_bottom" title="Dashboard" data-bs-toggle="tooltip" data-bs-placement="right">
+          <i class="bi bi-database nav-icons"></i>
+          <p>Inventory</p>
+        </a>
+      </li>
+
+      <!-- REPORTS -->
+      <li class="my-2 ">          
+        <a href="#" class="nav-link py-3" title="Orders" data-bs-toggle="tooltip" data-bs-placement="right">
+          <div class="border_box">
+          <i class="bi bi-clipboard-data"></i>
+          <p>Reports</p>
+          </div>
+        </a>  
+      </li>
+
+      <!-- MANAGE -->
+      <li class="my-2">
+        <a href="#" class="nav-link border_top" title="Products" data-bs-toggle="tooltip" data-bs-placement="right">
+          <i class="bi bi-person-circle"></i>
+          <p>Manage</p>
+        </a>       
+      </li>
+
+    </ul>
+
+    <!-- SIGN OUT -->
+    <div class="nav-link-exit nav-link">
+      <a href="#" class="d-flex flex-column align-items-center justify-content-center  link-dark text-decoration-none">
+        <i class="bi bi-escape"></i>
+          <p class="d-block">Sign Out</p>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- END OF NAVBAR -->
+</body>
+</html>
