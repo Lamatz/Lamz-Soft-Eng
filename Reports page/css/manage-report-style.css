@@ -52,7 +52,8 @@ body {
 .border_top::after{
   content: "";                  
   position: absolute;            
-  bottom: 0;                     
+  bottom: 0;      
+  /* left: 0;                */
   width: 50%;                   
   height: 1px;                  
   background-color: #FA2290;     

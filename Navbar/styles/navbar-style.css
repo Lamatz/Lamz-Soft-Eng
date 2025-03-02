@@ -1,31 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-body {
-    font-family: 'Poppins', sans-serif;
+.sidebar {
+  font-family: 'Poppins', sans-serif;
 }
 
 
 
 
 
-
-
-.sidebar{
+.sidebar {
   border-radius: 0 25px 25px 0;
   background-color: #FFA8D4;
   width: 160px;
   height: 100vh;
-
   position: fixed;
   top: 0;
   left: 0;
 }
 
-.sidebar p{
+
+.sidebar p {
   color: #FA2290;
 }
 
-.menu-text{
+.menu-text {
   font-weight: 600;
   font-size: 20px;
 }
@@ -44,20 +42,24 @@ body {
 
 
 .border_bottom,
-.border_top{
+.border_top {
   position: relative;
 }
+
 .border_bottom::after,
-.border_top::after{
-  content: "";                  
-  position: absolute;            
-  bottom: 0;                     
-  width: 50%;                   
-  height: 1px;                  
-  background-color: #FA2290;     
+.border_top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  /* Shift it back by half of its width */
+  width: 50%;
+  height: 1px;
+  background-color: #FA2290;
 }
 
-.border_top::after{
+.border_top::after {
   /* height: 2px; */
   top: 0;
 }
@@ -68,17 +70,17 @@ body {
   border: 2px solid #FA2290;
   border-radius: 8px;
   padding: 7px 17px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 
-.nav-link i{
- font-size: 30px;
- color: #FA2290;
- border: none;
+.nav-link i {
+  font-size: 30px;
+  color: #FA2290;
+  border: none;
 }
 
-.nav-link-exit i{
+.nav-link-exit i {
   font-size: 24px;
 }
 
@@ -86,5 +88,3 @@ body {
   font-size: 16px;
 
 }
-
-
