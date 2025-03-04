@@ -10,8 +10,8 @@ body {
   background-color: #FFA8D4;
   position: fixed;
   transition: all .25s ease-in-out;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   border-radius: 0 25px 25px 0;
 }
 
@@ -150,6 +150,27 @@ body {
   height: 100vh;
   border-radius: 0;
 }
+
+
+
+
+
+/* fix this part make sure that the main content stays centered */
+
+.sidebar-col:not(.shrink) .col-1 {
+  flex: 0 0 auto;
+  width: 8.33%;
+
+}
+
+.sidebar-column {
+  width: 90px;
+}
+
+
+
+
+
 
 
 
