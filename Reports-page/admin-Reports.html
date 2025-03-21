@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+  <link rel="stylesheet" href="css/manage-report-style.css">
+  <link rel="stylesheet" href="css/global.css">
+  <title>Reports</title>
+</head>
+
+
+
+
+<body>
+  <div class="container-fluid p-0">
+    <div class="row sidebar-col">
+
+      <!-- SIDEBAR -->
+      <div class="col-1 sidebar-column">
+        <div class="d-flex flex-column sidebar expand">
+          <!-- MENU TEXT -->
+
+          <div class="d-flex justify-content-center align-items-center">
+
+
+
+            <button class="toggle-btn d-flex flex-row align-items-center justify-content-center" type="button">
+              <div class="d-block link-dark text-decoration-none sidebar-body menu-text mt-4 pt-3 ">
+                <p class="text-center mb-1">Menu</p>
+              </div>
+
+              <div class="d-flex align-items-end mt-4 pt-3" style="margin-top: auto;">
+
+                <i class="bi bi-grid-fill fw-bold "></i>
+
+              </div>
+            </button>
+          </div>
+
+          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <!-- INVENTORY -->
+            <li class="my-2">
+              <a href="#" class="nav-link border_bottom" title="Dashboard" data-bs-toggle="tooltip"
+                data-bs-placement="right">
+                <i class="bi bi-database nav-icons"></i>
+                <p>Inventory</p>
+              </a>
+            </li>
+
+            <!-- REPORTS -->
+            <li class="my-2">
+              <a href="#" class="nav-link py-3" title="Orders" data-bs-toggle="tooltip" data-bs-placement="right">
+                <div class="border_box">
+                  <i class="bi bi-clipboard-data"></i>
+                  <p>Reports</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- MANAGE -->
+            <li class="my-2">
+              <a href="http://127.0.0.1:5500/admin-manage-account.html" class="nav-link border_top" title="Products"
+                data-bs-toggle="tooltip" data-bs-placement="right">
+                <i class="bi bi-person-circle"></i>
+                <p>Manage</p>
+              </a>
+            </li>
+          </ul>
+
+          <!-- SIGN OUT -->
+          <div class="nav-link-exit nav-link">
+            <a href="#"
+              class="d-flex flex-column align-items-center justify-content-center link-dark text-decoration-none">
+              <i class="bi bi-escape"></i>
+              <p class="d-block p-exit">Sign Out</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END OF NAVBAR -->
+
+
+
+
+      <main class="col-11 main-body">
+
+        <div class="container-fluid mt-5 px-5">
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4 manager-accounts">
+
+            <h1 class="h3 mb-0 text-gray-800"><img src="icons/arrow-right.svg" alt="" class="pe-2"> Reports</h1>
+            <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                  class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
+            <div class="manager-accounts d-flex justify-content-center align-content-center">
+              <p class="pe-4">Manager</p>
+              <img class="ms-4" src="icons/person.svg" alt="">
+            </div>
+
+          </div>
+
+
+
+          <!-- Second Header-->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4 second-header">
+
+            <button type="button" class="btn "> Order History</button>
+
+            <div class="manager-accounts d-flex justify-content-center align-content-center flex-row gap-5">
+              <button type="button" class="btn "><i class='fas fa-calendar pe-2'></i>01/04/2024 - 08/04/2024</button>
+              <button type="button" class="btn ">Generate Report</button>
+            </div>
+
+          </div>
+
+
+
+
+
+          <!-- Content Row -->
+          <div class="row d-flex align-items-center justify-content-center ">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class=" col-md-4 mb-4 card-report">
+              <div class="card border-left-primary py-2 ">
+                <div class="card-body ">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 card-text">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 text-light">
+                        Daily Sales</div>
+                      <div class="h5 mb-0 font-weight-bold">$40,000</div>
+                      <div class="pt-5 text-secondary">9 Feburary 2024</div>
+                    </div>
+                    <div class="col-auto icons d-flex justify-content-between flex-column">
+                      <i class='fas fa-dollar-sign upper-icon'></i>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="chart-icon justify-content-end d-flex me-3">
+                    <img src="icons/chart-1.svg" class=""/>
+                  </div> -->
+              </div>
+            </div>
+
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-md-4 mb-4 card-report">
+              <div class="card border-left-info py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 card-text">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">Monthly Revenue
+                      </div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h5 mb-0 mr-3 font-weight-bold">₱55,000</div>
+                          <div class="pt-5 text-secondary">1 Jan - 1 Feb</div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-auto icons">
+                      <i class='fas fa-money-bill-wave upper-icon'></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-md-4 mb-4 card-report">
+              <div class="card border-left-warning py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1 card-text">
+                        Total Orders Sold</div>
+                      <div class="h5 mb-0 font-weight-bold text-light ">18</div>
+                      <div class="pt-5 text-secondary">1 Jan - 1 Feb</div>
+                    </div>
+                    <div class="col-auto icons">
+                      <i class='fas fa-clipboard-list upper-icon'></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+          <!-- TABLE -->
+
+          <div class="container-fluid px-0 mt-4 main-table">
+
+
+            <div class="card px-5 py-3">
+
+
+
+              <div class="row">
+                <div class="col table-upper-right">
+                  <p class="word1">All Report</p>
+                  <p class="d-block word2">Orders</p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center table-form">
+                  <form class="d-none d-md-flex me-5">
+                    <input class="form-control border-0" type="search" placeholder="Search">
+                  </form>
+                  <div class="dropdown dropdown-btn">
+                    <button class="btn dropdown-toggle ms-5" type="button" id="dropdownMenuButton"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Sort by: <span class="fw-bold me-4">Newest</span> <i class='fas fa-chevron-down'></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <table class="table rounded-table">
+                <thead class="">
+
+
+                  <tr class="tableRow">
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Phone Number</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#12354565</td>
+                    <td>Maria Santos</td>
+                    <td>+63 09123456789</td>
+                    <td>0923456789</td>
+                    <td>Roses Bouquet</td>
+                    <td>₱500.00</td>
+                  </tr>
+                  <tr>
+                    <td>#12354566</td>
+                    <td>Carlos Dela Peña</td>
+                    <td>+63 09987654321</td>
+                    <td>0911223344</td>
+                    <td>Tulip Arrangement</td>
+                    <td>₱750.00</td>
+                  </tr>
+                  <tr>
+                    <td>#12354567</td>
+                    <td>Ana Mendoza</td>
+                    <td>+63 09551234567</td>
+                    <td>0933445566</td>
+                    <td>Mixed Flower Basket</td>
+                    <td>₱1,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>#12354568</td>
+                    <td>Jose Fernando</td>
+                    <td>+63 09229876543</td>
+                    <td>0966778899</td>
+                    <td>Sunflower Bouquet</td>
+                    <td>₱600.00</td>
+                  </tr>
+                  <tr>
+                    <td>#12354569</td>
+                    <td>Luis Garcia</td>
+                    <td>+63 09119998877</td>
+                    <td>0955443322</td>
+                    <td>Orchid Arrangement</td>
+                    <td>₱1,200.00</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <nav>
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled"><a class="page-link" href="#">«</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">»</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="Javascript/nav.js"></script>
+    </main>
+
+  </div>
+  </div>
+
+
+</body>
+
+</html>
