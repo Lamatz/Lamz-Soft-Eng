@@ -96,13 +96,14 @@
 
       <main class="col-11 main-body">
 
-        <div class="container-fluid mt-5 px-5">
+        <div class="container-fluid mt-5 px-5 ">
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4 manager-accounts">
 
-            <h1 class="h3 mb-0 text-gray-800"><img src="icons/arrow-right.svg" alt="" class="pe-2"> Reports</h1>
-            <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                  class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
+            <!-- <h1 class="h3 mb-0 text-gray-800"><img src="icons/arrow-right.svg" alt="" class="pe-2"> Reports</h1> -->
+            <h1 class="ms-2 text-gray-800 ">Reports</h1>
+
+
             <div class="manager-accounts d-flex justify-content-center align-content-center">
               <p class="pe-4">Manager</p>
               <img class="ms-4" src="icons/person.svg" alt="">
@@ -140,7 +141,7 @@
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 text-light">
                         Daily Sales</div>
                       <div class="h5 mb-0 font-weight-bold">$40,000</div>
-                      <div class="pt-5 text-secondary">9 Feburary 2024</div>
+                      <div class="pt-5 text-secondary">Jan - Feb</div>
                     </div>
                     <div class="col-auto icons d-flex justify-content-between flex-column">
                       <i class='fas fa-dollar-sign upper-icon'></i>
@@ -166,7 +167,7 @@
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
                           <div class="h5 mb-0 mr-3 font-weight-bold">₱55,000</div>
-                          <div class="pt-5 text-secondary">1 Jan - 1 Feb</div>
+                          <div class="pt-5 text-secondary">Jan - Feb</div>
                         </div>
 
                       </div>
@@ -188,7 +189,7 @@
                       <div class="text-xs font-weight-bold text-uppercase mb-1 card-text">
                         Total Orders Sold</div>
                       <div class="h5 mb-0 font-weight-bold text-light ">18</div>
-                      <div class="pt-5 text-secondary">1 Jan - 1 Feb</div>
+                      <div class="pt-5 text-secondary">Jan - Feb</div>
                     </div>
                     <div class="col-auto icons">
                       <i class='fas fa-clipboard-list upper-icon'></i>
@@ -211,19 +212,28 @@
           <div class="container-fluid px-0 mt-4 main-table">
 
 
-            <div class="card px-5 py-3">
+            <div class="card px-0 py-3">
 
 
 
-              <div class="row">
+              <div class="row px-5">
                 <div class="col table-upper-right">
                   <p class="word1">All Report</p>
                   <p class="d-block word2">Orders</p>
                 </div>
                 <div class="col d-flex align-items-center justify-content-center table-form">
-                  <form class="d-none d-md-flex me-5">
-                    <input class="form-control border-0" type="search" placeholder="Search">
-                  </form>
+
+
+                  <!-- SEARCH BAR -->
+                  <div class="input-group search-bar ">
+                    <button class="input-group-text border-0" type="button" id="searchButton">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <input type="text" id="searchInput" class="form-control border-0" placeholder="Search Name">
+                  </div>
+
+
+
                   <div class="dropdown dropdown-btn">
                     <button class="btn dropdown-toggle ms-5" type="button" id="dropdownMenuButton"
                       data-bs-toggle="dropdown" aria-expanded="false">
@@ -255,44 +265,44 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>#12354565</td>
-                    <td>Maria Santos</td>
-                    <td>+63 09123456789</td>
-                    <td>0923456789</td>
-                    <td>Roses Bouquet</td>
-                    <td>₱500.00</td>
+                    <td>#12354678</td>
+                    <td class="name-Report">Luis Garcia</td>
+                    <td>09551234567</td>
+                    <td>Sunflower Bouquet</td>
+                    <td>2</td>
+                    <td>₱1,200.00</td>
                   </tr>
                   <tr>
-                    <td>#12354566</td>
-                    <td>Carlos Dela Peña</td>
-                    <td>+63 09987654321</td>
-                    <td>0911223344</td>
-                    <td>Tulip Arrangement</td>
-                    <td>₱750.00</td>
-                  </tr>
-                  <tr>
-                    <td>#12354567</td>
-                    <td>Ana Mendoza</td>
-                    <td>+63 09551234567</td>
-                    <td>0933445566</td>
+                    <td>#12354789</td>
+                    <td class="name-Report">Ana Mendoza</td>
+                    <td>09119998877</td>
                     <td>Mixed Flower Basket</td>
+                    <td>1</td>
                     <td>₱1,000.00</td>
                   </tr>
                   <tr>
-                    <td>#12354568</td>
-                    <td>Jose Fernando</td>
-                    <td>+63 09229876543</td>
-                    <td>0966778899</td>
-                    <td>Sunflower Bouquet</td>
-                    <td>₱600.00</td>
+                    <td>#12354890</td>
+                    <td class="name-Report">Jose Fernando</td>
+                    <td>09987654321</td>
+                    <td>Orchid Arrangement</td>
+                    <td>3</td>
+                    <td>₱3,600.00</td>
                   </tr>
                   <tr>
-                    <td>#12354569</td>
-                    <td>Luis Garcia</td>
-                    <td>+63 09119998877</td>
-                    <td>0955443322</td>
-                    <td>Orchid Arrangement</td>
-                    <td>₱1,200.00</td>
+                    <td>#12354901</td>
+                    <td class="name-Report">Maria Santos</td>
+                    <td>09229876543</td>
+                    <td>Roses Bouquet</td>
+                    <td>1</td>
+                    <td>₱500.00</td>
+                  </tr>
+                  <tr>
+                    <td>#12355012</td>
+                    <td class="name-Report">Carlos Dela Peña</td>
+                    <td>09123456789</td>
+                    <td>Tulip Arrangement</td>
+                    <td>2</td>
+                    <td>₱1,500.00</td>
                   </tr>
 
                 </tbody>
@@ -326,5 +336,7 @@
 
 
 </body>
+
+<script src="Javascript/generate-report.js"></script>
 
 </html>

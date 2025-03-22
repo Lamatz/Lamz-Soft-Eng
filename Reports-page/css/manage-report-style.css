@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 
@@ -76,6 +77,11 @@ body {
   top: 0;
 }
 
+
+
+.input-group-text {
+  border-radius: 15px;
+}
 
 
 .border_box {
