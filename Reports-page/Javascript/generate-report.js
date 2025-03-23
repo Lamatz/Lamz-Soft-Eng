@@ -28,16 +28,6 @@ function filterTable(searchInput, tableRows, originalRows, filterValue, table) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 // the problem with this code is that it might not work dynamically when adding actual row entries coming from actual customers but that is a problem for the future
 // TOTAL ORDERS CARD AND TOTAL SALES CARD - Dynamic Functions
 document.addEventListener("DOMContentLoaded", function () {
@@ -79,49 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const table = document.querySelector(".rounded-table tbody");
-  const rows = Array.from(table.querySelectorAll("tr"));
-  let changingRows = rows;
-  let filterValue = "";
-
-
-  // FILTER FUNCTION
-  const filterDropdown = document.querySelector(".reports-filter");
-  filterDropdown.addEventListener("change", function () {
-    filterValue = filterDropdown.value;
-    changingRows = filterChange(changingRows, table, filterValue);
-    initializePagination(changingRows);
-  });
-  // END OF FILTER FUNCTION
-
-
-  // SEARCH FUNCTION
-  const searchInput = document.getElementById("searchInput");
-  const searchButton = document.getElementById("searchButton");
-  searchInput.addEventListener("keyup", function (event) {
-    if (event.key === "Enter") {
-      changingRows = filterTable(searchInput, changingRows, rows, filterValue, table);
-      initializePagination(changingRows);
-    }
-  });
-
-  searchButton.addEventListener("click", function () {
-    changingRows = filterTable(searchInput, changingRows, rows, filterValue, table);
-    initializePagination(changingRows);
-  });
-  // END OF SEARCH FUNCTION
-
-
-  //Initializating Pagination
-  initializePagination(changingRows);
-
-
-});
 
 
 
@@ -216,3 +163,50 @@ function filterChange(rows, tableBody, filterValue) {
   rows.forEach(row => tableBody.appendChild(row));
   return rows;
 }
+
+
+
+
+// MAIN FUNCTION-----------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const table = document.querySelector(".rounded-table tbody");
+  const rows = Array.from(table.querySelectorAll("tr"));
+  let changingRows = rows;
+  let filterValue = "";
+
+
+  // FILTER FUNCTION
+  const filterDropdown = document.querySelector(".reports-filter");
+  filterDropdown.addEventListener("change", function () {
+    filterValue = filterDropdown.value;
+    changingRows = filterChange(changingRows, table, filterValue);
+    initializePagination(changingRows);
+  });
+  // END OF FILTER FUNCTION
+
+
+  // SEARCH FUNCTION
+  const searchInput = document.getElementById("searchInput");
+  const searchButton = document.getElementById("searchButton");
+  searchInput.addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+      changingRows = filterTable(searchInput, changingRows, rows, filterValue, table);
+      initializePagination(changingRows);
+    }
+  });
+
+  searchButton.addEventListener("click", function () {
+    changingRows = filterTable(searchInput, changingRows, rows, filterValue, table);
+    initializePagination(changingRows);
+  });
+  // END OF SEARCH FUNCTION
+
+
+  //Initializating Pagination
+  initializePagination(changingRows);
+
+
+});
+
+
+
