@@ -7,6 +7,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -98,11 +100,7 @@
         <div class="container-fluid mt-5 px-5 ">
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4 manager-accounts">
-
-            <!-- <h1 class="h3 mb-0 text-gray-800"><img src="icons/arrow-right.svg" alt="" class="pe-2"> Reports</h1> -->
             <h1 class="ms-2 text-gray-800 ">Reports</h1>
-
-
             <div class="manager-accounts d-flex justify-content-center align-content-center mb-auto">
               <p class="pe-4">Manager</p>
               <img class="ms-4" src="icons/person.svg" alt="">
@@ -134,7 +132,7 @@
                     <div class="col mr-2 card-text">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 text-light">
                         Daily Sales</div>
-                      <div class="h5 mb-0 font-weight-bold">$40,000</div>
+                      <div class="h5 mb-0 font-weight-bold">40,000</div>
                       <div class="pt-5 text-secondary">Jan - Feb</div>
                     </div>
                     <div class="col-auto icons d-flex justify-content-between flex-column">
@@ -143,9 +141,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="chart-icon justify-content-end d-flex me-3">
-                    <img src="icons/chart-1.svg" class=""/>
-                  </div> -->
               </div>
             </div>
 
@@ -182,7 +177,7 @@
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-uppercase mb-1 card-text">
                         Total Orders Sold</div>
-                      <div class="h5 mb-0 font-weight-bold text-light ">18</div>
+                      <div class="h5 mb-0 font-weight-bold text-light total-orders">18</div>
                       <div class="pt-5 text-secondary">Jan - Feb</div>
                     </div>
                     <div class="col-auto icons">
@@ -192,6 +187,8 @@
                 </div>
               </div>
             </div>
+
+
           </div>
 
 
@@ -227,30 +224,28 @@
                   </div>
 
 
-
-                  <div class="dropdown dropdown-btn">
-                    <button class="btn dropdown-toggle ms-5" type="button" id="dropdownMenuButton"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      Sort by: <span class="fw-bold me-4">Newest</span> <i class='fas fa-chevron-down'></i>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                  <!-- Filter MENU -->
+                  <div class="container">
+                    <select class="form-select  reports-filter">
+                      <option selected value="">Filter by:</option>
+                      <option value="newest">Newest</option>
+                      <option value="oldest">Oldest</option>
+                      <option value="price-low">Price: Low to High</option>
+                      <option value="price-high">Price: High to Low</option>
+                    </select>
                   </div>
+
                 </div>
               </div>
 
 
 
               <table class="table rounded-table">
-                <thead class="">
-
-
+                <thead>
                   <tr class="tableRow">
                     <th>Order ID</th>
                     <th>Customer Name</th>
+                    <th>Date</th>
                     <th>Phone Number</th>
                     <th>Product</th>
                     <th>Quantity</th>
@@ -260,7 +255,8 @@
                 <tbody>
                   <tr>
                     <td>#12354678</td>
-                    <td class="name-Report">Luis Garcia</td>
+                    <td class="name-Report">Luis Santos</td>
+                    <td>03-20-2025</td>
                     <td>09551234567</td>
                     <td>Sunflower Bouquet</td>
                     <td>2</td>
@@ -269,6 +265,7 @@
                   <tr>
                     <td>#12354789</td>
                     <td class="name-Report">Ana Mendoza</td>
+                    <td>03-19-2025</td>
                     <td>09119998877</td>
                     <td>Mixed Flower Basket</td>
                     <td>1</td>
@@ -277,6 +274,7 @@
                   <tr>
                     <td>#12354890</td>
                     <td class="name-Report">Jose Fernando</td>
+                    <td>03-18-2025</td>
                     <td>09987654321</td>
                     <td>Orchid Arrangement</td>
                     <td>3</td>
@@ -285,6 +283,7 @@
                   <tr>
                     <td>#12354901</td>
                     <td class="name-Report">Maria Santos</td>
+                    <td>03-17-2025</td>
                     <td>09229876543</td>
                     <td>Roses Bouquet</td>
                     <td>1</td>
@@ -293,6 +292,7 @@
                   <tr>
                     <td>#12355012</td>
                     <td class="name-Report">Carlos Dela Peña</td>
+                    <td>03-16-2025</td>
                     <td>09123456789</td>
                     <td>Tulip Arrangement</td>
                     <td>2</td>
@@ -301,6 +301,7 @@
 
                 </tbody>
               </table>
+
 
               <nav>
                 <ul class="pagination justify-content-end">
@@ -329,10 +330,14 @@
   </div>
 
 
+
+
+
+
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="Javascript/generate-report.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 
 </html>

@@ -370,3 +370,11 @@ td {
   font-size: 22px;
   font-weight: 600;
 }
+
+.reports-filter {
+  border-radius: 25px;
+  background-color: #F9FBFF;
+  font-family: 'Poppins', sans-serif;
+  color: #212529;
+  border: none;
+}
